@@ -135,6 +135,10 @@ What the numbers show:
 - **Counting from Spotter's own skeletons is better than from the dataset's OpenPose skeletons** on
   the same videos.
 
+MM-Fit has no deadlifts. Spotter's deadlift settings (the hip angle, counted at lockout) and its
+deadlift checks were set by hand and are tested only on synthetic lifters
+([tests/test_reps.cpp](tests/test_reps.cpp)), not on real lifts.
+
 ### The exercise classifier
 
 On 2.1 s windows, against the label of the window's second half:
@@ -174,7 +178,49 @@ the ankles, 0.06–0.09 for the hips, knees, shoulders and face, and up to 0.16 
 ear. Across the five test videos it found the person in 99.1–99.99% of frames, at 77–87 frames a
 second on the RTX 2060 (48 for one video processed while another job shared the GPU).
 
-PLANNER_RESULTS
+### The planner
+
+[cli/plan_eval.cpp](cli/plan_eval.cpp) builds training logs that cover each situation the
+progression rules tell apart:
+- a clean session;
+- a session with missed repetitions, once and twice in a row;
+- a grinding session (RPE 9.5);
+- a session with form faults on half the repetitions;
+- fatigue reported at 3, 8 and 9 out of 10.
+
+That makes 11 logged lifters with 8 exercises each, plus 5 first plans for different lifters with
+no log. Qwen2.5-7B-Instruct (Q4_K_M, temperature 0) plans each one. Its numbers are compared with
+the rules': does it go up, stay or go down where the rules do, and would the check have to change
+it? Three versions of the prompt:
+
+| | Raw log | Log with its facts spelled out | ...and an explicit decision per exercise |
+|---|---|---|---|
+| Plans usable (valid, complete) | 12 of 16 | 16 of 16 | 15 of 16 |
+| Same direction as the rules | 33% | 39% | **55%** |
+| – after a clean session (increase) | 1 of 8 | 1 of 8 | 5 of 8 |
+| – after missed or hard sessions (hold) | 24 of 24 | 24 of 24 | 12 of 24 |
+| – after two missed sessions (deload) | 0 of 8 | 1 of 8 | 6 of 8 |
+| – when tired (one set fewer) | 4 of 48 | 8 of 48 | 25 of 48 |
+| Logged numbers the check had to change | 60% | 59% | **48%** |
+| Median time per plan | 18 s | 25 s | 12 s |
+
+- **"Log with its facts spelled out"** means each session is written as "missed 2 repetitions",
+  "RPE 9.5 (very hard)" or "form faults on 5 of 15 repetitions (many)", where the raw log only had
+  "done 5/5/3".
+- **"An explicit decision per exercise"** means the schema asks for start, increase, hold, deload or
+  reduce before the numbers.
+- **The first two prompts look perfect at holding** because the model held almost everything: it
+  ignored fatigue and two missed sessions in a row.
+- **With the decision step it reads the log far better,** but it still keeps all the sets on half
+  of the days the lifter reported being tired.
+- **For a first plan,** the model's weights stayed within a safe start for the beginners. For the
+  tired intermediate lifter (fatigue 8) it wrote three sets of everything, where the rules allow two.
+
+So a 7B model on its own would give the wrong advice on about half the numbers. That is why
+Spotter keeps the check: what the lifter sees is always the model's plan where it agrees with the
+rules, and the rules' number, marked "Adjusted" with the reason, where it does not. The model's part
+is the program's shape and the explanations; the safety of the numbers does not depend on it.
+The app uses the third prompt.
 
 ## Running it
 

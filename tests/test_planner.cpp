@@ -93,6 +93,16 @@ class TestPlanner : public QObject {
     QCOMPARE(c.plan.days[0].items[1].weight_kg, 30.0);
   }
 
+  void tired_first_session() {
+    // With nothing logged, high fatigue caps the sets instead of taking one off whatever was planned.
+    Profile p;
+    auto ok = validate(plan_of({item("squats", 2, 5, 20)}), p, {}, 9, std::nullopt);
+    QCOMPARE(ok.adjusted, 0);
+    auto many = validate(plan_of({item("squats", 4, 5, 20)}), p, {}, 9, std::nullopt);
+    QCOMPARE(many.adjusted, 1);
+    QCOMPARE(many.plan.days[0].items[0].sets, 2);
+  }
+
   void rules_plan_and_json() {
     Profile p;
     p.days = 3;

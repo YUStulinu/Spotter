@@ -42,7 +42,7 @@ class PoseEstimator {
 
   Skeleton run(const cv::Mat& bgr, PoseTiming* timing = nullptr);
   void reset();                       // forget the tracked person (a new video, a new set)
-  const std::string& device() const;  // "DirectML" or "CPU"
+  const std::string& device() const;  // "DirectML, <the GPU>" or "CPU"
 
  private:
   struct Impl;

@@ -6,6 +6,7 @@
                 {
                     "broke_rules": false,
                     "exercise": "squats",
+                    "model_decision": "increase",
                     "model_direction": 1,
                     "reps": 5,
                     "rule": "increase",
@@ -15,25 +16,27 @@
                     "rule_weight": 65,
                     "sets": 3,
                     "weight": 65,
-                    "why": "Progressive overload"
+                    "why": "every set completed, clean form"
                 },
                 {
-                    "broke_rules": true,
+                    "broke_rules": false,
                     "exercise": "dumbbell_shoulder_press",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 8,
                     "rule": "deload",
                     "rule_direction": -1,
                     "rule_reps": 8,
                     "rule_sets": 3,
                     "rule_weight": 12,
-                    "sets": 3,
-                    "weight": 14,
-                    "why": "Maintain form"
+                    "sets": 2,
+                    "weight": 12,
+                    "why": "missed repetitions two sessions in a row"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "bicep_curls",
+                    "model_decision": "hold",
                     "model_direction": 0,
                     "reps": 12,
                     "rule": "hold",
@@ -43,26 +46,28 @@
                     "rule_weight": 10,
                     "sets": 2,
                     "weight": 10,
-                    "why": "Fatigue managed"
+                    "why": "form faults on many repetitions"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "pushups",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 12,
                     "rule": "hold",
                     "rule_direction": 0,
                     "rule_reps": 12,
                     "rule_sets": 3,
                     "rule_weight": 0,
-                    "sets": 3,
+                    "sets": 2,
                     "weight": 0,
-                    "why": "Fatigue managed"
+                    "why": "missed repetitions two sessions in a row"
                 },
                 {
-                    "broke_rules": false,
+                    "broke_rules": true,
                     "exercise": "deadlift",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 5,
                     "rule": "hold",
                     "rule_direction": 0,
@@ -70,27 +75,29 @@
                     "rule_sets": 1,
                     "rule_weight": 80,
                     "sets": 1,
-                    "weight": 80,
-                    "why": "Recovery needed"
+                    "weight": 85,
+                    "why": "every set completed, clean form"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_rows",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 10,
                     "rule": "hold",
                     "rule_direction": 0,
                     "rule_reps": 10,
                     "rule_sets": 3,
                     "rule_weight": 20,
-                    "sets": 3,
-                    "weight": 20,
-                    "why": "Maintain form"
+                    "sets": 2,
+                    "weight": 18,
+                    "why": "very hard, RPE 9.5"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lunges",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 10,
                     "rule": "increase",
                     "rule_direction": 1,
@@ -98,27 +105,28 @@
                     "rule_sets": 2,
                     "rule_weight": 14,
                     "sets": 2,
-                    "weight": 12,
-                    "why": "Maintain form"
+                    "weight": 14,
+                    "why": "every set completed, clean form"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "situps",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 15,
                     "rule": "deload",
                     "rule_direction": -1,
                     "rule_reps": 13,
                     "rule_sets": 2,
                     "rule_weight": 0,
-                    "sets": 2,
+                    "sets": 1,
                     "weight": 0,
-                    "why": "Fatigue managed"
+                    "why": "missed repetitions two sessions in a row"
                 }
             ],
-            "ms": 15663,
+            "ms": 12635,
             "problems": [
-                "dumbbell_shoulder_press: no deload after two sessions with missed repetitions",
+                "deadlift: heavier although missed repetitions last time: same weight, finish every set first",
                 "situps: no deload after two sessions with missed repetitions"
             ],
             "scenario": "log-r0-f3 squats:clean deadlift:missed_once dumbbell_shoulder_press:missed_twice dumbbell_rows:grinding bicep_curls:form_faults lunges:clean pushups:missed_once situps:missed_twice"
@@ -129,6 +137,7 @@
                 {
                     "broke_rules": true,
                     "exercise": "squats",
+                    "model_decision": "increase",
                     "model_direction": 1,
                     "reps": 5,
                     "rule": "reduce",
@@ -138,11 +147,12 @@
                     "rule_weight": 60,
                     "sets": 3,
                     "weight": 65,
-                    "why": "Progressive overload"
+                    "why": "last session clean form and RPE 7.5"
                 },
                 {
-                    "broke_rules": true,
+                    "broke_rules": false,
                     "exercise": "dumbbell_shoulder_press",
+                    "model_decision": "deload",
                     "model_direction": -1,
                     "reps": 8,
                     "rule": "reduce",
@@ -150,13 +160,14 @@
                     "rule_reps": 8,
                     "rule_sets": 2,
                     "rule_weight": 14,
-                    "sets": 3,
+                    "sets": 2,
                     "weight": 12,
-                    "why": "Missed reps, reduce weight"
+                    "why": "missed repetitions two sessions in a row"
                 },
                 {
-                    "broke_rules": true,
+                    "broke_rules": false,
                     "exercise": "bicep_curls",
+                    "model_decision": "deload",
                     "model_direction": -1,
                     "reps": 12,
                     "rule": "reduce",
@@ -164,28 +175,30 @@
                     "rule_reps": 12,
                     "rule_sets": 1,
                     "rule_weight": 10,
-                    "sets": 2,
-                    "weight": 9,
-                    "why": "Form faults, reduce weight"
+                    "sets": 1,
+                    "weight": 8,
+                    "why": "form faults on many repetitions"
                 },
                 {
-                    "broke_rules": true,
+                    "broke_rules": false,
                     "exercise": "pushups",
-                    "model_direction": 0,
+                    "model_decision": "reduce",
+                    "model_direction": -1,
                     "reps": 12,
                     "rule": "reduce",
                     "rule_direction": -1,
                     "rule_reps": 12,
                     "rule_sets": 2,
                     "rule_weight": 0,
-                    "sets": 3,
+                    "sets": 2,
                     "weight": 0,
-                    "why": "Fatigue, reduce sets"
+                    "why": "missed repetitions and high fatigue"
                 },
                 {
-                    "broke_rules": false,
+                    "broke_rules": true,
                     "exercise": "deadlift",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 5,
                     "rule": "reduce",
                     "rule_direction": 0,
@@ -193,12 +206,13 @@
                     "rule_sets": 1,
                     "rule_weight": 80,
                     "sets": 1,
-                    "weight": 80,
-                    "why": "Missed reps, keep same weight"
+                    "weight": 85,
+                    "why": "last session clean form and RPE 7.5"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "dumbbell_rows",
+                    "model_decision": "hold",
                     "model_direction": 0,
                     "reps": 10,
                     "rule": "reduce",
@@ -208,12 +222,13 @@
                     "rule_weight": 20,
                     "sets": 3,
                     "weight": 20,
-                    "why": "Completed, keep same weight"
+                    "why": "last session RPE 9.5, very hard"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "lunges",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 10,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -221,33 +236,31 @@
                     "rule_sets": 1,
                     "rule_weight": 12,
                     "sets": 2,
-                    "weight": 12,
-                    "why": "Completed, keep same weight"
+                    "weight": 14,
+                    "why": "last session clean form and RPE 7.5"
                 },
                 {
-                    "broke_rules": true,
+                    "broke_rules": false,
                     "exercise": "situps",
-                    "model_direction": 0,
+                    "model_decision": "reduce",
+                    "model_direction": -1,
                     "reps": 15,
                     "rule": "reduce",
                     "rule_direction": -1,
                     "rule_reps": 15,
                     "rule_sets": 1,
                     "rule_weight": 0,
-                    "sets": 2,
+                    "sets": 1,
                     "weight": 0,
-                    "why": "Missed reps, reduce sets"
+                    "why": "missed repetitions two sessions in a row"
                 }
             ],
-            "ms": 14728,
+            "ms": 11371,
             "problems": [
                 "squats: 3 sets despite fatigue (at most 2)",
-                "dumbbell_shoulder_press: 3 sets despite fatigue (at most 2)",
-                "bicep_curls: 2 sets despite fatigue (at most 1)",
-                "pushups: 3 sets despite fatigue (at most 2)",
+                "deadlift: heavier despite fatigue",
                 "dumbbell_rows: 3 sets despite fatigue (at most 2)",
-                "lunges: 2 sets despite fatigue (at most 1)",
-                "situps: 2 sets despite fatigue (at most 1)"
+                "lunges: 2 sets despite fatigue (at most 1)"
             ],
             "scenario": "log-r0-f8 squats:clean deadlift:missed_once dumbbell_shoulder_press:missed_twice dumbbell_rows:grinding bicep_curls:form_faults lunges:clean pushups:missed_once situps:missed_twice"
         },
@@ -257,6 +270,7 @@
                 {
                     "broke_rules": true,
                     "exercise": "squats",
+                    "model_decision": "increase",
                     "model_direction": 1,
                     "reps": 5,
                     "rule": "reduce",
@@ -266,11 +280,12 @@
                     "rule_weight": 52.5,
                     "sets": 3,
                     "weight": 65,
-                    "why": "Progressive overload"
+                    "why": "last session clean form and RPE 7.5"
                 },
                 {
-                    "broke_rules": true,
+                    "broke_rules": false,
                     "exercise": "dumbbell_shoulder_press",
+                    "model_decision": "deload",
                     "model_direction": -1,
                     "reps": 8,
                     "rule": "reduce",
@@ -278,13 +293,14 @@
                     "rule_reps": 8,
                     "rule_sets": 2,
                     "rule_weight": 12,
-                    "sets": 3,
+                    "sets": 2,
                     "weight": 12,
-                    "why": "Missed reps, reduce"
+                    "why": "missed repetitions two sessions in a row"
                 },
                 {
-                    "broke_rules": true,
+                    "broke_rules": false,
                     "exercise": "bicep_curls",
+                    "model_decision": "deload",
                     "model_direction": -1,
                     "reps": 12,
                     "rule": "reduce",
@@ -292,13 +308,14 @@
                     "rule_reps": 12,
                     "rule_sets": 1,
                     "rule_weight": 9,
-                    "sets": 2,
-                    "weight": 9,
-                    "why": "Form faults, reduce"
+                    "sets": 1,
+                    "weight": 8,
+                    "why": "form faults on many repetitions"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "pushups",
+                    "model_decision": "reduce",
                     "model_direction": -1,
                     "reps": 12,
                     "rule": "reduce",
@@ -308,12 +325,13 @@
                     "rule_weight": 0,
                     "sets": 2,
                     "weight": 0,
-                    "why": "High fatigue, reduce"
+                    "why": "missed repetitions and high fatigue"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "deadlift",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 5,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -321,12 +339,13 @@
                     "rule_sets": 1,
                     "rule_weight": 70,
                     "sets": 1,
-                    "weight": 80,
-                    "why": "Missed reps, maintain"
+                    "weight": 85,
+                    "why": "last session clean form and RPE 7.5"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "dumbbell_rows",
+                    "model_decision": "hold",
                     "model_direction": 0,
                     "reps": 10,
                     "rule": "reduce",
@@ -336,12 +355,13 @@
                     "rule_weight": 18,
                     "sets": 3,
                     "weight": 20,
-                    "why": "Completed, maintain"
+                    "why": "last session RPE 9.5, very hard"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "lunges",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 10,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -349,34 +369,33 @@
                     "rule_sets": 1,
                     "rule_weight": 10,
                     "sets": 2,
-                    "weight": 12,
-                    "why": "Completed, maintain"
+                    "weight": 14,
+                    "why": "last session clean form and RPE 7.5"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "situps",
-                    "model_direction": 0,
+                    "model_decision": "reduce",
+                    "model_direction": -1,
                     "reps": 15,
                     "rule": "reduce",
                     "rule_direction": -1,
                     "rule_reps": 13,
                     "rule_sets": 1,
                     "rule_weight": 0,
-                    "sets": 2,
+                    "sets": 1,
                     "weight": 0,
-                    "why": "High fatigue, reduce"
+                    "why": "missed repetitions two sessions in a row"
                 }
             ],
-            "ms": 23217,
+            "ms": 11377,
             "problems": [
                 "squats: 3 sets despite fatigue (at most 2)",
-                "dumbbell_shoulder_press: 3 sets despite fatigue (at most 2)",
-                "bicep_curls: 2 sets despite fatigue (at most 1)",
                 "pushups: more repetitions despite fatigue",
                 "deadlift: heavier despite fatigue",
                 "dumbbell_rows: 3 sets despite fatigue (at most 2)",
                 "lunges: 2 sets despite fatigue (at most 1)",
-                "situps: 2 sets despite fatigue (at most 1)"
+                "situps: more repetitions despite fatigue"
             ],
             "scenario": "log-r0-f9 squats:clean deadlift:missed_once dumbbell_shoulder_press:missed_twice dumbbell_rows:grinding bicep_curls:form_faults lunges:clean pushups:missed_once situps:missed_twice"
         },
@@ -386,7 +405,8 @@
                 {
                     "broke_rules": false,
                     "exercise": "squats",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 5,
                     "rule": "hold",
                     "rule_direction": 0,
@@ -394,12 +414,13 @@
                     "rule_sets": 3,
                     "rule_weight": 60,
                     "sets": 3,
-                    "weight": 60,
-                    "why": "Missed 2 reps, reduce"
+                    "weight": 55,
+                    "why": "missed 2 reps, de-load"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_shoulder_press",
+                    "model_decision": "hold",
                     "model_direction": 0,
                     "reps": 8,
                     "rule": "hold",
@@ -409,12 +430,13 @@
                     "rule_weight": 14,
                     "sets": 3,
                     "weight": 14,
-                    "why": "Very hard, maintain"
+                    "why": "very hard, hold"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "bicep_curls",
-                    "model_direction": 0,
+                    "model_decision": "reduce",
+                    "model_direction": -1,
                     "reps": 12,
                     "rule": "increase",
                     "rule_direction": 1,
@@ -422,12 +444,13 @@
                     "rule_sets": 2,
                     "rule_weight": 11,
                     "sets": 2,
-                    "weight": 10,
-                    "why": "Clean form, maintain"
+                    "weight": 9,
+                    "why": "missed reps, reduce"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "pushups",
+                    "model_decision": "deload",
                     "model_direction": 0,
                     "reps": 12,
                     "rule": "deload",
@@ -437,11 +460,12 @@
                     "rule_weight": 0,
                     "sets": 3,
                     "weight": 0,
-                    "why": "Missed 4 reps, reduce"
+                    "why": "missed reps, de-load"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "deadlift",
+                    "model_decision": "deload",
                     "model_direction": -1,
                     "reps": 5,
                     "rule": "deload",
@@ -451,12 +475,13 @@
                     "rule_weight": 70,
                     "sets": 1,
                     "weight": 72,
-                    "why": "Missed 2 reps, reduce 10%"
+                    "why": "missed reps, de-load"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_rows",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 10,
                     "rule": "hold",
                     "rule_direction": 0,
@@ -464,13 +489,14 @@
                     "rule_sets": 3,
                     "rule_weight": 20,
                     "sets": 3,
-                    "weight": 20,
-                    "why": "Form faults, maintain"
+                    "weight": 18,
+                    "why": "form faults, de-load"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lunges",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 10,
                     "rule": "hold",
                     "rule_direction": 0,
@@ -478,12 +504,13 @@
                     "rule_sets": 2,
                     "rule_weight": 12,
                     "sets": 2,
-                    "weight": 12,
-                    "why": "Missed 2 reps, reduce"
+                    "weight": 10,
+                    "why": "missed reps, de-load"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "situps",
+                    "model_decision": "deload",
                     "model_direction": 0,
                     "reps": 15,
                     "rule": "hold",
@@ -493,10 +520,10 @@
                     "rule_weight": 0,
                     "sets": 2,
                     "weight": 0,
-                    "why": "Very hard, maintain"
+                    "why": "very hard, de-load"
                 }
             ],
-            "ms": 25844,
+            "ms": 11920,
             "problems": [
                 "pushups: no deload after two sessions with missed repetitions"
             ],
@@ -506,9 +533,10 @@
             "fatigue": 3,
             "items": [
                 {
-                    "broke_rules": true,
+                    "broke_rules": false,
                     "exercise": "squats",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 5,
                     "rule": "deload",
                     "rule_direction": -1,
@@ -516,13 +544,14 @@
                     "rule_sets": 3,
                     "rule_weight": 52.5,
                     "sets": 3,
-                    "weight": 60,
-                    "why": "Missed 4 reps two sessions in a row"
+                    "weight": 55,
+                    "why": "missed reps two sessions in a row"
                 },
                 {
-                    "broke_rules": false,
+                    "broke_rules": true,
                     "exercise": "dumbbell_shoulder_press",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 8,
                     "rule": "hold",
                     "rule_direction": 0,
@@ -530,12 +559,13 @@
                     "rule_sets": 3,
                     "rule_weight": 14,
                     "sets": 3,
-                    "weight": 14,
-                    "why": "Form faults on 12 of 24 reps"
+                    "weight": 16,
+                    "why": "clean form, no faults"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "bicep_curls",
+                    "model_decision": "hold",
                     "model_direction": 0,
                     "reps": 12,
                     "rule": "hold",
@@ -545,11 +575,12 @@
                     "rule_weight": 10,
                     "sets": 2,
                     "weight": 10,
-                    "why": "Missed 2 reps"
+                    "why": "missed reps, very hard"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "pushups",
+                    "model_decision": "reduce",
                     "model_direction": 0,
                     "reps": 12,
                     "rule": "hold",
@@ -559,12 +590,13 @@
                     "rule_weight": 0,
                     "sets": 3,
                     "weight": 0,
-                    "why": "High fatigue reported today"
+                    "why": "very hard, fatigue 3/10"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "deadlift",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 5,
                     "rule": "hold",
                     "rule_direction": 0,
@@ -572,13 +604,14 @@
                     "rule_sets": 1,
                     "rule_weight": 80,
                     "sets": 1,
-                    "weight": 80,
-                    "why": "RPE 9.5, very hard"
+                    "weight": 72,
+                    "why": "missed reps two sessions in a row"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_rows",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 10,
                     "rule": "increase",
                     "rule_direction": 1,
@@ -586,13 +619,14 @@
                     "rule_sets": 3,
                     "rule_weight": 22,
                     "sets": 3,
-                    "weight": 20,
-                    "why": ""
+                    "weight": 22,
+                    "why": "clean form, no faults"
                 },
                 {
-                    "broke_rules": true,
+                    "broke_rules": false,
                     "exercise": "lunges",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 10,
                     "rule": "deload",
                     "rule_direction": -1,
@@ -600,12 +634,13 @@
                     "rule_sets": 2,
                     "rule_weight": 10,
                     "sets": 2,
-                    "weight": 12,
-                    "why": "Missed 4 reps two sessions in a row"
+                    "weight": 10,
+                    "why": "missed reps two sessions in a row"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "situps",
+                    "model_decision": "reduce",
                     "model_direction": 0,
                     "reps": 15,
                     "rule": "hold",
@@ -615,13 +650,12 @@
                     "rule_weight": 0,
                     "sets": 2,
                     "weight": 0,
-                    "why": "Form faults on 14 of 30 reps"
+                    "why": "many form faults, fatigue 3/10"
                 }
             ],
-            "ms": 25069,
+            "ms": 12082,
             "problems": [
-                "squats: no deload after two sessions with missed repetitions",
-                "lunges: no deload after two sessions with missed repetitions"
+                "dumbbell_shoulder_press: heavier although form slipped on 12 of 24 repetitions: same weight until it is clean"
             ],
             "scenario": "log-r2-f3 squats:missed_twice deadlift:grinding dumbbell_shoulder_press:form_faults dumbbell_rows:clean bicep_curls:missed_once lunges:missed_twice pushups:grinding situps:form_faults"
         },
@@ -631,7 +665,8 @@
                 {
                     "broke_rules": true,
                     "exercise": "squats",
-                    "model_direction": 0,
+                    "model_decision": "reduce",
+                    "model_direction": -1,
                     "reps": 5,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -639,13 +674,14 @@
                     "rule_sets": 2,
                     "rule_weight": 60,
                     "sets": 3,
-                    "weight": 60,
-                    "why": "Missed 4 reps two sessions in a row"
+                    "weight": 55,
+                    "why": "missed reps two sessions in a row"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "dumbbell_shoulder_press",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 8,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -653,12 +689,13 @@
                     "rule_sets": 2,
                     "rule_weight": 14,
                     "sets": 3,
-                    "weight": 14,
-                    "why": "Form faults on 12 of 24 reps"
+                    "weight": 16,
+                    "why": "clean form and no missed reps"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "bicep_curls",
+                    "model_decision": "hold",
                     "model_direction": 0,
                     "reps": 12,
                     "rule": "reduce",
@@ -668,11 +705,12 @@
                     "rule_weight": 10,
                     "sets": 2,
                     "weight": 10,
-                    "why": "Missed 2 reps"
+                    "why": "missed reps, RPE 9.5"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "pushups",
+                    "model_decision": "reduce",
                     "model_direction": 0,
                     "reps": 12,
                     "rule": "reduce",
@@ -682,12 +720,13 @@
                     "rule_weight": 0,
                     "sets": 3,
                     "weight": 0,
-                    "why": "High fatigue reported today"
+                    "why": "RPE 9.5, high fatigue"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "deadlift",
-                    "model_direction": 0,
+                    "model_decision": "reduce",
+                    "model_direction": -1,
                     "reps": 5,
                     "rule": "reduce",
                     "rule_direction": 0,
@@ -695,13 +734,14 @@
                     "rule_sets": 1,
                     "rule_weight": 80,
                     "sets": 1,
-                    "weight": 80,
-                    "why": "Very hard, keep same weight"
+                    "weight": 72,
+                    "why": "RPE 9.5, high fatigue"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "dumbbell_rows",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 10,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -709,13 +749,14 @@
                     "rule_sets": 2,
                     "rule_weight": 20,
                     "sets": 3,
-                    "weight": 20,
-                    "why": "Keep same weight"
+                    "weight": 22,
+                    "why": "clean form and no missed reps"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "lunges",
-                    "model_direction": 0,
+                    "model_decision": "reduce",
+                    "model_direction": -1,
                     "reps": 10,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -723,12 +764,13 @@
                     "rule_sets": 1,
                     "rule_weight": 12,
                     "sets": 2,
-                    "weight": 12,
-                    "why": "Missed 4 reps two sessions in a row"
+                    "weight": 10,
+                    "why": "missed reps two sessions in a row"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "situps",
+                    "model_decision": "reduce",
                     "model_direction": 0,
                     "reps": 15,
                     "rule": "reduce",
@@ -738,10 +780,10 @@
                     "rule_weight": 0,
                     "sets": 2,
                     "weight": 0,
-                    "why": "Many form faults"
+                    "why": "form faults, high fatigue"
                 }
             ],
-            "ms": 23361,
+            "ms": 11128,
             "problems": [
                 "squats: 3 sets despite fatigue (at most 2)",
                 "dumbbell_shoulder_press: 3 sets despite fatigue (at most 2)",
@@ -759,7 +801,8 @@
                 {
                     "broke_rules": true,
                     "exercise": "squats",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 5,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -767,13 +810,14 @@
                     "rule_sets": 2,
                     "rule_weight": 52.5,
                     "sets": 3,
-                    "weight": 60,
-                    "why": "Missed 4 reps two sessions in a row"
+                    "weight": 55,
+                    "why": "missed reps two sessions in a row"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "dumbbell_shoulder_press",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 8,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -781,12 +825,13 @@
                     "rule_sets": 2,
                     "rule_weight": 12,
                     "sets": 3,
-                    "weight": 14,
-                    "why": "Form faults on 12 of 24 reps"
+                    "weight": 16,
+                    "why": "clean form, no faults"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "bicep_curls",
+                    "model_decision": "hold",
                     "model_direction": 0,
                     "reps": 12,
                     "rule": "reduce",
@@ -796,11 +841,12 @@
                     "rule_weight": 9,
                     "sets": 2,
                     "weight": 10,
-                    "why": "Missed 2 reps"
+                    "why": "missed reps, very hard"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "pushups",
+                    "model_decision": "deload",
                     "model_direction": 0,
                     "reps": 12,
                     "rule": "reduce",
@@ -810,12 +856,13 @@
                     "rule_weight": 0,
                     "sets": 3,
                     "weight": 0,
-                    "why": "High fatigue reported today"
+                    "why": "very hard, high fatigue"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "deadlift",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 5,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -823,13 +870,14 @@
                     "rule_sets": 1,
                     "rule_weight": 70,
                     "sets": 1,
-                    "weight": 80,
-                    "why": "RPE 9.5, very hard"
+                    "weight": 72,
+                    "why": "missed reps two sessions in a row"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "dumbbell_rows",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 10,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -837,13 +885,14 @@
                     "rule_sets": 2,
                     "rule_weight": 18,
                     "sets": 3,
-                    "weight": 20,
-                    "why": ""
+                    "weight": 22,
+                    "why": "clean form, no faults"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "lunges",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 10,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -851,12 +900,13 @@
                     "rule_sets": 1,
                     "rule_weight": 10,
                     "sets": 2,
-                    "weight": 12,
-                    "why": "Missed 4 reps two sessions in a row"
+                    "weight": 10,
+                    "why": "missed reps two sessions in a row"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "situps",
+                    "model_decision": "hold",
                     "model_direction": 0,
                     "reps": 15,
                     "rule": "reduce",
@@ -866,10 +916,10 @@
                     "rule_weight": 0,
                     "sets": 2,
                     "weight": 0,
-                    "why": "Form faults on 14 of 30 reps"
+                    "why": "many form faults"
                 }
             ],
-            "ms": 22906,
+            "ms": 11008,
             "problems": [
                 "squats: 3 sets despite fatigue (at most 2)",
                 "dumbbell_shoulder_press: 3 sets despite fatigue (at most 2)",
@@ -886,9 +936,10 @@
             "fatigue": 3,
             "items": [
                 {
-                    "broke_rules": false,
+                    "broke_rules": true,
                     "exercise": "squats",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 5,
                     "rule": "hold",
                     "rule_direction": 0,
@@ -896,13 +947,14 @@
                     "rule_sets": 3,
                     "rule_weight": 60,
                     "sets": 3,
-                    "weight": 60,
-                    "why": "Consistent clean form and no grinding"
+                    "weight": 65,
+                    "why": "last session clean form, no grinding"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_shoulder_press",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 8,
                     "rule": "increase",
                     "rule_direction": 1,
@@ -910,12 +962,13 @@
                     "rule_sets": 3,
                     "rule_weight": 16,
                     "sets": 3,
-                    "weight": 14,
-                    "why": "Progressing weight with clean form"
+                    "weight": 16,
+                    "why": "last session clean form, no grinding"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "bicep_curls",
+                    "model_decision": "hold",
                     "model_direction": 0,
                     "reps": 12,
                     "rule": "deload",
@@ -925,11 +978,12 @@
                     "rule_weight": 9,
                     "sets": 2,
                     "weight": 10,
-                    "why": "Maintaining weight due to missed reps"
+                    "why": "missed reps two sessions in a row"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "pushups",
+                    "model_decision": "reduce",
                     "model_direction": 0,
                     "reps": 12,
                     "rule": "hold",
@@ -939,12 +993,13 @@
                     "rule_weight": 0,
                     "sets": 3,
                     "weight": 0,
-                    "why": "High fatigue, reduce sets"
+                    "why": "high fatigue, 9/10"
                 },
                 {
-                    "broke_rules": false,
+                    "broke_rules": true,
                     "exercise": "deadlift",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 5,
                     "rule": "hold",
                     "rule_direction": 0,
@@ -952,13 +1007,14 @@
                     "rule_sets": 1,
                     "rule_weight": 80,
                     "sets": 1,
-                    "weight": 80,
-                    "why": "Consistent clean form and no grinding"
+                    "weight": 85,
+                    "why": "last session clean form, no grinding"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_rows",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 10,
                     "rule": "hold",
                     "rule_direction": 0,
@@ -966,12 +1022,13 @@
                     "rule_sets": 3,
                     "rule_weight": 20,
                     "sets": 3,
-                    "weight": 20,
-                    "why": "Missed reps, reduce weight"
+                    "weight": 18,
+                    "why": "missed 2 reps, 10% off"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lunges",
+                    "model_decision": "hold",
                     "model_direction": 0,
                     "reps": 10,
                     "rule": "hold",
@@ -981,11 +1038,12 @@
                     "rule_weight": 12,
                     "sets": 2,
                     "weight": 12,
-                    "why": "Consistent clean form and no grinding"
+                    "why": "last session clean form, no grinding"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "situps",
+                    "model_decision": "reduce",
                     "model_direction": 0,
                     "reps": 15,
                     "rule": "increase",
@@ -995,12 +1053,14 @@
                     "rule_weight": 0,
                     "sets": 2,
                     "weight": 0,
-                    "why": "High fatigue, reduce weight"
+                    "why": "high fatigue, 9/10"
                 }
             ],
-            "ms": 24860,
+            "ms": 12146,
             "problems": [
-                "bicep_curls: no deload after two sessions with missed repetitions"
+                "squats: heavier although last session felt very hard (RPE 9.5): same weight",
+                "bicep_curls: no deload after two sessions with missed repetitions",
+                "deadlift: heavier although form slipped on 2 of 5 repetitions: same weight until it is clean"
             ],
             "scenario": "log-r3-f3 squats:grinding deadlift:form_faults dumbbell_shoulder_press:clean dumbbell_rows:missed_once bicep_curls:missed_twice lunges:grinding pushups:form_faults situps:clean"
         },
@@ -1010,6 +1070,7 @@
                 {
                     "broke_rules": false,
                     "exercise": "squats",
+                    "model_decision": "hold",
                     "model_direction": 0,
                     "reps": 5,
                     "rule": "hold",
@@ -1019,12 +1080,13 @@
                     "rule_weight": 60,
                     "sets": 3,
                     "weight": 60,
-                    "why": "Consistent clean form, no overload needed."
+                    "why": "missed 2 reps on 6/7/7"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_shoulder_press",
-                    "model_direction": 0,
+                    "model_decision": "reduce",
+                    "model_direction": -1,
                     "reps": 8,
                     "rule": "hold",
                     "rule_direction": 0,
@@ -1032,12 +1094,13 @@
                     "rule_sets": 3,
                     "rule_weight": 14,
                     "sets": 3,
-                    "weight": 14,
-                    "why": "Missed 2 reps, keep weight."
+                    "weight": 12,
+                    "why": "missed 2 reps on 6/7/7"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "bicep_curls",
+                    "model_decision": "hold",
                     "model_direction": 0,
                     "reps": 12,
                     "rule": "hold",
@@ -1047,11 +1110,12 @@
                     "rule_weight": 10,
                     "sets": 2,
                     "weight": 10,
-                    "why": "Very hard, reduce by 10%."
+                    "why": "RPE 9.5 on 6/7/7"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "pushups",
+                    "model_decision": "reduce",
                     "model_direction": 0,
                     "reps": 12,
                     "rule": "increase",
@@ -1061,12 +1125,13 @@
                     "rule_weight": 0,
                     "sets": 3,
                     "weight": 0,
-                    "why": "Clean form, no overload needed."
+                    "why": "missed 2 reps on 6/7/7"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "deadlift",
-                    "model_direction": 0,
+                    "model_decision": "increase",
+                    "model_direction": 1,
                     "reps": 5,
                     "rule": "increase",
                     "rule_direction": 1,
@@ -1074,13 +1139,14 @@
                     "rule_sets": 1,
                     "rule_weight": 85,
                     "sets": 1,
-                    "weight": 80,
-                    "why": "Clean form, no overload needed."
+                    "weight": 85,
+                    "why": "clean form on 6/7/7"
                 },
                 {
-                    "broke_rules": true,
+                    "broke_rules": false,
                     "exercise": "dumbbell_rows",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 10,
                     "rule": "deload",
                     "rule_direction": -1,
@@ -1088,12 +1154,13 @@
                     "rule_sets": 3,
                     "rule_weight": 18,
                     "sets": 3,
-                    "weight": 20,
-                    "why": "Missed 4 reps, reduce by 10%."
+                    "weight": 18,
+                    "why": "missed 4 reps on 6/7/7"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lunges",
+                    "model_decision": "hold",
                     "model_direction": 0,
                     "reps": 10,
                     "rule": "hold",
@@ -1103,11 +1170,12 @@
                     "rule_weight": 12,
                     "sets": 2,
                     "weight": 12,
-                    "why": "Form faults, reduce by 10%."
+                    "why": "form faults on 6/7/7"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "situps",
+                    "model_decision": "reduce",
                     "model_direction": 0,
                     "reps": 15,
                     "rule": "hold",
@@ -1117,12 +1185,11 @@
                     "rule_weight": 0,
                     "sets": 2,
                     "weight": 0,
-                    "why": "Missed 2 reps, reduce by 10%."
+                    "why": "missed 2 reps on 6/7/7"
                 }
             ],
-            "ms": 25304,
+            "ms": 12674,
             "problems": [
-                "dumbbell_rows: no deload after two sessions with missed repetitions"
             ],
             "scenario": "log-r4-f3 squats:form_faults deadlift:clean dumbbell_shoulder_press:missed_once dumbbell_rows:missed_twice bicep_curls:grinding lunges:form_faults pushups:clean situps:missed_once"
         },
@@ -1132,7 +1199,8 @@
                 {
                     "broke_rules": true,
                     "exercise": "squats",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 5,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -1140,12 +1208,13 @@
                     "rule_sets": 2,
                     "rule_weight": 60,
                     "sets": 3,
-                    "weight": 60,
-                    "why": "Missed form faults on 6 of 15 reps"
+                    "weight": 55,
+                    "why": "missed reps two sessions in a row"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "dumbbell_shoulder_press",
+                    "model_decision": "hold",
                     "model_direction": 0,
                     "reps": 8,
                     "rule": "reduce",
@@ -1155,12 +1224,13 @@
                     "rule_weight": 14,
                     "sets": 3,
                     "weight": 14,
-                    "why": "Missed 2 reps in last set"
+                    "why": "missed 2 reps"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "bicep_curls",
-                    "model_direction": 0,
+                    "model_decision": "reduce",
+                    "model_direction": -1,
                     "reps": 12,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -1168,27 +1238,29 @@
                     "rule_sets": 1,
                     "rule_weight": 10,
                     "sets": 2,
-                    "weight": 10,
-                    "why": "RPE 9.5, very hard"
+                    "weight": 9,
+                    "why": "very hard"
                 },
                 {
-                    "broke_rules": true,
+                    "broke_rules": false,
                     "exercise": "pushups",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 12,
                     "rule": "reduce",
                     "rule_direction": -1,
                     "rule_reps": 12,
                     "rule_sets": 2,
                     "rule_weight": 0,
-                    "sets": 3,
+                    "sets": 2,
                     "weight": 0,
-                    "why": "Fatigue 8/10, high"
+                    "why": "missed reps two sessions in a row"
                 },
                 {
                     "broke_rules": false,
                     "exercise": "deadlift",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 5,
                     "rule": "reduce",
                     "rule_direction": 0,
@@ -1196,61 +1268,60 @@
                     "rule_sets": 1,
                     "rule_weight": 80,
                     "sets": 1,
-                    "weight": 80,
-                    "why": "Clean form, no missed reps"
+                    "weight": 75,
+                    "why": "missed reps two sessions in a row"
                 },
                 {
-                    "broke_rules": true,
+                    "broke_rules": false,
                     "exercise": "dumbbell_rows",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 10,
                     "rule": "reduce",
                     "rule_direction": -1,
                     "rule_reps": 10,
                     "rule_sets": 2,
                     "rule_weight": 20,
-                    "sets": 3,
-                    "weight": 20,
-                    "why": "Missed 4 reps in last two sets"
+                    "sets": 2,
+                    "weight": 18,
+                    "why": "missed reps two sessions in a row"
                 },
                 {
-                    "broke_rules": true,
+                    "broke_rules": false,
                     "exercise": "lunges",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 10,
                     "rule": "reduce",
                     "rule_direction": -1,
                     "rule_reps": 10,
                     "rule_sets": 1,
                     "rule_weight": 12,
-                    "sets": 2,
-                    "weight": 12,
-                    "why": "Form faults on 10 of 20 reps"
+                    "sets": 1,
+                    "weight": 10,
+                    "why": "form faults on many reps"
                 },
                 {
-                    "broke_rules": true,
+                    "broke_rules": false,
                     "exercise": "situps",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 15,
                     "rule": "reduce",
                     "rule_direction": -1,
                     "rule_reps": 15,
                     "rule_sets": 1,
                     "rule_weight": 0,
-                    "sets": 2,
+                    "sets": 1,
                     "weight": 0,
-                    "why": "Missed 2 reps, fatigue 8/10"
+                    "why": "missed reps two sessions in a row"
                 }
             ],
-            "ms": 23603,
+            "ms": 11142,
             "problems": [
                 "squats: 3 sets despite fatigue (at most 2)",
                 "dumbbell_shoulder_press: 3 sets despite fatigue (at most 2)",
-                "bicep_curls: 2 sets despite fatigue (at most 1)",
-                "pushups: 3 sets despite fatigue (at most 2)",
-                "dumbbell_rows: 3 sets despite fatigue (at most 2)",
-                "lunges: 2 sets despite fatigue (at most 1)",
-                "situps: 2 sets despite fatigue (at most 1)"
+                "bicep_curls: 2 sets despite fatigue (at most 1)"
             ],
             "scenario": "log-r4-f8 squats:form_faults deadlift:clean dumbbell_shoulder_press:missed_once dumbbell_rows:missed_twice bicep_curls:grinding lunges:form_faults pushups:clean situps:missed_once"
         },
@@ -1260,7 +1331,8 @@
                 {
                     "broke_rules": true,
                     "exercise": "squats",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 5,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -1268,12 +1340,13 @@
                     "rule_sets": 2,
                     "rule_weight": 52.5,
                     "sets": 3,
-                    "weight": 60,
-                    "why": "Form faults on 6 of 15 reps (many)"
+                    "weight": 55,
+                    "why": "missed reps two sessions in a row"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "dumbbell_shoulder_press",
+                    "model_decision": "hold",
                     "model_direction": 0,
                     "reps": 8,
                     "rule": "reduce",
@@ -1283,12 +1356,13 @@
                     "rule_weight": 12,
                     "sets": 3,
                     "weight": 14,
-                    "why": "Missed 2 reps in 2 of 3 sets"
+                    "why": "missed 2 reps"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "bicep_curls",
-                    "model_direction": 0,
+                    "model_decision": "reduce",
+                    "model_direction": -1,
                     "reps": 12,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -1296,14 +1370,15 @@
                     "rule_sets": 1,
                     "rule_weight": 9,
                     "sets": 2,
-                    "weight": 10,
-                    "why": "RPE 9.5 (very hard)"
+                    "weight": 9,
+                    "why": "RPE 9.5, very hard"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "pushups",
-                    "model_direction": 0,
-                    "reps": 12,
+                    "model_decision": "deload",
+                    "model_direction": -1,
+                    "reps": 10,
                     "rule": "reduce",
                     "rule_direction": -1,
                     "rule_reps": 10,
@@ -1311,12 +1386,13 @@
                     "rule_weight": 0,
                     "sets": 3,
                     "weight": 0,
-                    "why": "Fatigue 9/10 (high)"
+                    "why": "missed reps two sessions in a row"
                 },
                 {
-                    "broke_rules": true,
+                    "broke_rules": false,
                     "exercise": "deadlift",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 5,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -1324,13 +1400,14 @@
                     "rule_sets": 1,
                     "rule_weight": 70,
                     "sets": 1,
-                    "weight": 80,
-                    "why": "Clean form, no missed reps"
+                    "weight": 70,
+                    "why": "missed reps two sessions in a row"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "dumbbell_rows",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 10,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -1338,13 +1415,14 @@
                     "rule_sets": 2,
                     "rule_weight": 18,
                     "sets": 3,
-                    "weight": 20,
-                    "why": "Missed 4 reps in 2 of 3 sets"
+                    "weight": 18,
+                    "why": "missed reps two sessions in a row"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "lunges",
-                    "model_direction": 0,
+                    "model_decision": "deload",
+                    "model_direction": -1,
                     "reps": 10,
                     "rule": "reduce",
                     "rule_direction": -1,
@@ -1352,12 +1430,13 @@
                     "rule_sets": 1,
                     "rule_weight": 10,
                     "sets": 2,
-                    "weight": 12,
-                    "why": "Form faults on 10 of 20 reps (many)"
+                    "weight": 10,
+                    "why": "form faults on many reps"
                 },
                 {
                     "broke_rules": true,
                     "exercise": "situps",
+                    "model_decision": "deload",
                     "model_direction": 0,
                     "reps": 15,
                     "rule": "reduce",
@@ -1367,16 +1446,15 @@
                     "rule_weight": 0,
                     "sets": 2,
                     "weight": 0,
-                    "why": "Missed 2 reps in 1 of 2 sets"
+                    "why": "missed reps two sessions in a row"
                 }
             ],
-            "ms": 24175,
+            "ms": 11320,
             "problems": [
                 "squats: 3 sets despite fatigue (at most 2)",
                 "dumbbell_shoulder_press: 3 sets despite fatigue (at most 2)",
                 "bicep_curls: 2 sets despite fatigue (at most 1)",
                 "pushups: 3 sets despite fatigue (at most 2)",
-                "deadlift: heavier despite fatigue",
                 "dumbbell_rows: 3 sets despite fatigue (at most 2)",
                 "lunges: 2 sets despite fatigue (at most 1)",
                 "situps: 2 sets despite fatigue (at most 1)"
@@ -1389,63 +1467,63 @@
                 {
                     "broke_rules": false,
                     "exercise": "squats",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
                     "weight": 20
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lunges",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
                     "weight": 5
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_shoulder_press",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 3
+                    "weight": 2
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_rows",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 3
+                    "weight": 2
                 },
                 {
                     "broke_rules": false,
                     "exercise": "bicep_curls",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 1
                 },
                 {
                     "broke_rules": false,
                     "exercise": "tricep_extensions",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 1
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lateral_shoulder_raises",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 1
                 },
                 {
                     "broke_rules": false,
                     "exercise": "pushups",
-                    "reps": 15,
+                    "reps": 10,
                     "sets": 3,
                     "weight": 0
                 },
                 {
                     "broke_rules": false,
                     "exercise": "situps",
-                    "reps": 20,
+                    "reps": 15,
                     "sets": 3,
                     "weight": 0
                 },
@@ -1459,63 +1537,63 @@
                 {
                     "broke_rules": false,
                     "exercise": "squats",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 20
+                    "weight": 25
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lunges",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 5
+                    "weight": 6
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_shoulder_press",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
                     "weight": 3
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_rows",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
                     "weight": 3
                 },
                 {
                     "broke_rules": false,
                     "exercise": "bicep_curls",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 1
                 },
                 {
                     "broke_rules": false,
                     "exercise": "tricep_extensions",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 1
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lateral_shoulder_raises",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 1
                 },
                 {
                     "broke_rules": false,
                     "exercise": "pushups",
-                    "reps": 15,
+                    "reps": 10,
                     "sets": 3,
                     "weight": 0
                 },
                 {
                     "broke_rules": false,
                     "exercise": "situps",
-                    "reps": 20,
+                    "reps": 15,
                     "sets": 3,
                     "weight": 0
                 },
@@ -1529,63 +1607,63 @@
                 {
                     "broke_rules": false,
                     "exercise": "squats",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 20
+                    "weight": 30
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lunges",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 5
+                    "weight": 7
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_shoulder_press",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 3
+                    "weight": 4
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_rows",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 3
+                    "weight": 4
                 },
                 {
                     "broke_rules": false,
                     "exercise": "bicep_curls",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 1
                 },
                 {
                     "broke_rules": false,
                     "exercise": "tricep_extensions",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 1
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lateral_shoulder_raises",
-                    "reps": 12,
+                    "reps": 10,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 1
                 },
                 {
                     "broke_rules": false,
                     "exercise": "pushups",
-                    "reps": 15,
+                    "reps": 10,
                     "sets": 3,
                     "weight": 0
                 },
                 {
                     "broke_rules": false,
                     "exercise": "situps",
-                    "reps": 20,
+                    "reps": 15,
                     "sets": 3,
                     "weight": 0
                 },
@@ -1597,298 +1675,15 @@
                     "weight": 0
                 }
             ],
-            "ms": 77715,
+            "ms": 44637,
             "problems": [
             ],
             "scenario": "first-strength-beginner-60kg"
         },
         {
+            "error": "no days",
             "fatigue": 4,
-            "items": [
-                {
-                    "broke_rules": false,
-                    "exercise": "squats",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 30
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "lunges",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 10
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "dumbbell_shoulder_press",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 10
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "dumbbell_rows",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 10
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "bicep_curls",
-                    "reps": 12,
-                    "sets": 3,
-                    "weight": 3
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "tricep_extensions",
-                    "reps": 12,
-                    "sets": 3,
-                    "weight": 3
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "lateral_shoulder_raises",
-                    "reps": 12,
-                    "sets": 3,
-                    "weight": 3
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "pushups",
-                    "reps": 15,
-                    "sets": 3,
-                    "weight": 0
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "situps",
-                    "reps": 20,
-                    "sets": 3,
-                    "weight": 0
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "jumping_jacks",
-                    "reps": 20,
-                    "sets": 3,
-                    "weight": 0
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "squats",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 30
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "lunges",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 10
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "dumbbell_shoulder_press",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 10
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "dumbbell_rows",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 10
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "bicep_curls",
-                    "reps": 12,
-                    "sets": 3,
-                    "weight": 3
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "tricep_extensions",
-                    "reps": 12,
-                    "sets": 3,
-                    "weight": 3
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "lateral_shoulder_raises",
-                    "reps": 12,
-                    "sets": 3,
-                    "weight": 3
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "pushups",
-                    "reps": 15,
-                    "sets": 3,
-                    "weight": 0
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "situps",
-                    "reps": 20,
-                    "sets": 3,
-                    "weight": 0
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "jumping_jacks",
-                    "reps": 20,
-                    "sets": 3,
-                    "weight": 0
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "squats",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 35
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "lunges",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 12
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "dumbbell_shoulder_press",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 12
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "dumbbell_rows",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 12
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "bicep_curls",
-                    "reps": 12,
-                    "sets": 3,
-                    "weight": 4
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "tricep_extensions",
-                    "reps": 12,
-                    "sets": 3,
-                    "weight": 4
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "lateral_shoulder_raises",
-                    "reps": 12,
-                    "sets": 3,
-                    "weight": 4
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "pushups",
-                    "reps": 15,
-                    "sets": 3,
-                    "weight": 0
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "situps",
-                    "reps": 20,
-                    "sets": 3,
-                    "weight": 0
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "jumping_jacks",
-                    "reps": 20,
-                    "sets": 3,
-                    "weight": 0
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "squats",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 40
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "lunges",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 15
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "dumbbell_shoulder_press",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 15
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "dumbbell_rows",
-                    "reps": 10,
-                    "sets": 3,
-                    "weight": 15
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "bicep_curls",
-                    "reps": 12,
-                    "sets": 3,
-                    "weight": 5
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "tricep_extensions",
-                    "reps": 12,
-                    "sets": 3,
-                    "weight": 5
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "lateral_shoulder_raises",
-                    "reps": 12,
-                    "sets": 3,
-                    "weight": 5
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "pushups",
-                    "reps": 15,
-                    "sets": 3,
-                    "weight": 0
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "situps",
-                    "reps": 20,
-                    "sets": 3,
-                    "weight": 0
-                },
-                {
-                    "broke_rules": false,
-                    "exercise": "jumping_jacks",
-                    "reps": 20,
-                    "sets": 3,
-                    "weight": 0
-                }
-            ],
-            "ms": 111081,
-            "problems": [
-            ],
+            "ms": 63937,
             "scenario": "first-muscle-intermediate-85kg"
         },
         {
@@ -1913,14 +1708,14 @@
                     "exercise": "dumbbell_shoulder_press",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 3
+                    "weight": 2
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_rows",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 3
+                    "weight": 2
                 },
                 {
                     "broke_rules": false,
@@ -1946,14 +1741,14 @@
                 {
                     "broke_rules": false,
                     "exercise": "pushups",
-                    "reps": 15,
+                    "reps": 12,
                     "sets": 3,
                     "weight": 0
                 },
                 {
                     "broke_rules": false,
                     "exercise": "situps",
-                    "reps": 20,
+                    "reps": 15,
                     "sets": 3,
                     "weight": 0
                 },
@@ -1969,14 +1764,14 @@
                     "exercise": "squats",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 20
+                    "weight": 25
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lunges",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 5
+                    "weight": 6
                 },
                 {
                     "broke_rules": false,
@@ -1997,33 +1792,33 @@
                     "exercise": "bicep_curls",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 1
+                    "weight": 2
                 },
                 {
                     "broke_rules": false,
                     "exercise": "tricep_extensions",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 1
+                    "weight": 2
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lateral_shoulder_raises",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 1
+                    "weight": 2
                 },
                 {
                     "broke_rules": false,
                     "exercise": "pushups",
-                    "reps": 15,
+                    "reps": 12,
                     "sets": 3,
                     "weight": 0
                 },
                 {
                     "broke_rules": false,
                     "exercise": "situps",
-                    "reps": 20,
+                    "reps": 15,
                     "sets": 3,
                     "weight": 0
                 },
@@ -2035,7 +1830,7 @@
                     "weight": 0
                 }
             ],
-            "ms": 53048,
+            "ms": 30464,
             "problems": [
             ],
             "scenario": "first-general-beginner-70kg"
@@ -2048,7 +1843,7 @@
                     "exercise": "squats",
                     "reps": 10,
                     "sets": 3,
-                    "weight": 45
+                    "weight": 40
                 },
                 {
                     "broke_rules": true,
@@ -2069,47 +1864,47 @@
                     "exercise": "dumbbell_shoulder_press",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 8
+                    "weight": 10
                 },
                 {
                     "broke_rules": true,
                     "exercise": "dumbbell_rows",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 8
+                    "weight": 10
                 },
                 {
                     "broke_rules": true,
                     "exercise": "bicep_curls",
                     "reps": 15,
                     "sets": 3,
-                    "weight": 3
+                    "weight": 5
                 },
                 {
                     "broke_rules": true,
                     "exercise": "tricep_extensions",
                     "reps": 15,
                     "sets": 3,
-                    "weight": 3
+                    "weight": 5
                 },
                 {
                     "broke_rules": true,
                     "exercise": "lateral_shoulder_raises",
                     "reps": 15,
                     "sets": 3,
-                    "weight": 3
+                    "weight": 5
                 },
                 {
                     "broke_rules": true,
                     "exercise": "pushups",
-                    "reps": 15,
+                    "reps": 10,
                     "sets": 3,
                     "weight": 0
                 },
                 {
                     "broke_rules": true,
                     "exercise": "situps",
-                    "reps": 20,
+                    "reps": 15,
                     "sets": 3,
                     "weight": 0
                 },
@@ -2132,61 +1927,61 @@
                     "exercise": "deadlift",
                     "reps": 10,
                     "sets": 3,
-                    "weight": 40
+                    "weight": 45
                 },
                 {
                     "broke_rules": true,
                     "exercise": "lunges",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 10
+                    "weight": 12
                 },
                 {
                     "broke_rules": true,
                     "exercise": "dumbbell_shoulder_press",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 8
+                    "weight": 12
                 },
                 {
                     "broke_rules": true,
                     "exercise": "dumbbell_rows",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 8
+                    "weight": 12
                 },
                 {
                     "broke_rules": true,
                     "exercise": "bicep_curls",
                     "reps": 15,
                     "sets": 3,
-                    "weight": 3
+                    "weight": 6
                 },
                 {
                     "broke_rules": true,
                     "exercise": "tricep_extensions",
                     "reps": 15,
                     "sets": 3,
-                    "weight": 3
+                    "weight": 6
                 },
                 {
                     "broke_rules": true,
                     "exercise": "lateral_shoulder_raises",
                     "reps": 15,
                     "sets": 3,
-                    "weight": 3
+                    "weight": 6
                 },
                 {
                     "broke_rules": true,
                     "exercise": "pushups",
-                    "reps": 15,
+                    "reps": 10,
                     "sets": 3,
                     "weight": 0
                 },
                 {
                     "broke_rules": true,
                     "exercise": "situps",
-                    "reps": 20,
+                    "reps": 15,
                     "sets": 3,
                     "weight": 0
                 },
@@ -2202,68 +1997,68 @@
                     "exercise": "squats",
                     "reps": 10,
                     "sets": 3,
-                    "weight": 45
+                    "weight": 50
                 },
                 {
                     "broke_rules": true,
                     "exercise": "deadlift",
                     "reps": 10,
                     "sets": 3,
-                    "weight": 40
+                    "weight": 50
                 },
                 {
                     "broke_rules": true,
                     "exercise": "lunges",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 10
+                    "weight": 14
                 },
                 {
                     "broke_rules": true,
                     "exercise": "dumbbell_shoulder_press",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 8
+                    "weight": 14
                 },
                 {
                     "broke_rules": true,
                     "exercise": "dumbbell_rows",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 8
+                    "weight": 14
                 },
                 {
                     "broke_rules": true,
                     "exercise": "bicep_curls",
                     "reps": 15,
                     "sets": 3,
-                    "weight": 3
+                    "weight": 7
                 },
                 {
                     "broke_rules": true,
                     "exercise": "tricep_extensions",
                     "reps": 15,
                     "sets": 3,
-                    "weight": 3
+                    "weight": 7
                 },
                 {
                     "broke_rules": true,
                     "exercise": "lateral_shoulder_raises",
                     "reps": 15,
                     "sets": 3,
-                    "weight": 3
+                    "weight": 7
                 },
                 {
                     "broke_rules": true,
                     "exercise": "pushups",
-                    "reps": 15,
+                    "reps": 10,
                     "sets": 3,
                     "weight": 0
                 },
                 {
                     "broke_rules": true,
                     "exercise": "situps",
-                    "reps": 20,
+                    "reps": 15,
                     "sets": 3,
                     "weight": 0
                 },
@@ -2275,7 +2070,7 @@
                     "weight": 0
                 }
             ],
-            "ms": 90813,
+            "ms": 49503,
             "problems": [
                 "squats: too many sets for the fatigue reported",
                 "deadlift: too many sets for the fatigue reported",
@@ -2328,7 +2123,7 @@
                     "exercise": "lunges",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 5
                 },
                 {
                     "broke_rules": false,
@@ -2375,7 +2170,7 @@
                 {
                     "broke_rules": false,
                     "exercise": "situps",
-                    "reps": 20,
+                    "reps": 15,
                     "sets": 3,
                     "weight": 0
                 },
@@ -2391,49 +2186,49 @@
                     "exercise": "squats",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 10
+                    "weight": 15
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lunges",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 6
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_shoulder_press",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 3
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_rows",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 3
                 },
                 {
                     "broke_rules": false,
                     "exercise": "bicep_curls",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 1
+                    "weight": 2
                 },
                 {
                     "broke_rules": false,
                     "exercise": "tricep_extensions",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 1
+                    "weight": 2
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lateral_shoulder_raises",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 1
+                    "weight": 2
                 },
                 {
                     "broke_rules": false,
@@ -2445,7 +2240,7 @@
                 {
                     "broke_rules": false,
                     "exercise": "situps",
-                    "reps": 20,
+                    "reps": 15,
                     "sets": 3,
                     "weight": 0
                 },
@@ -2461,49 +2256,49 @@
                     "exercise": "squats",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 10
+                    "weight": 20
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lunges",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 7
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_shoulder_press",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 4
                 },
                 {
                     "broke_rules": false,
                     "exercise": "dumbbell_rows",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 2
+                    "weight": 4
                 },
                 {
                     "broke_rules": false,
                     "exercise": "bicep_curls",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 1
+                    "weight": 3
                 },
                 {
                     "broke_rules": false,
                     "exercise": "tricep_extensions",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 1
+                    "weight": 3
                 },
                 {
                     "broke_rules": false,
                     "exercise": "lateral_shoulder_raises",
                     "reps": 12,
                     "sets": 3,
-                    "weight": 1
+                    "weight": 3
                 },
                 {
                     "broke_rules": false,
@@ -2515,7 +2310,7 @@
                 {
                     "broke_rules": false,
                     "exercise": "situps",
-                    "reps": 20,
+                    "reps": 15,
                     "sets": 3,
                     "weight": 0
                 },
@@ -2527,38 +2322,43 @@
                     "weight": 0
                 }
             ],
-            "ms": 80987,
+            "ms": 44809,
             "problems": [
             ],
             "scenario": "first-general-beginner-55kg"
         }
     ],
     "summary": {
-        "broke_rules": 0.5909090909090909,
+        "broke_rules": 0.4772727272727273,
         "by_decision": {
             "deload": {
-                "agree": 1,
+                "agree": 6,
+                "said_the_same_decision": 7,
                 "total": 8
             },
             "hold": {
-                "agree": 24,
+                "agree": 12,
+                "said_the_same_decision": 7,
                 "total": 24
             },
             "increase": {
-                "agree": 1,
+                "agree": 5,
+                "said_the_same_decision": 5,
                 "total": 8
             },
             "reduce": {
-                "agree": 8,
+                "agree": 25,
+                "said_the_same_decision": 11,
                 "total": 48
             }
         },
-        "direction_agreement": 0.38636363636363635,
-        "first_plan_broke_rules": 0.21568627450980393,
-        "first_plan_items": 153,
+        "decision_agreement": 0.3409090909090909,
+        "direction_agreement": 0.5454545454545454,
+        "first_plan_broke_rules": 0.2920353982300885,
+        "first_plan_items": 113,
         "logged_items": 88,
-        "median_ms": 25069,
-        "parsed": 16,
+        "median_ms": 12146,
+        "parsed": 15,
         "plans": 16,
         "wrong_day_count": 0
     }

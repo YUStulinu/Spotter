@@ -10,6 +10,8 @@
 #include <opencv2/imgproc.hpp>
 #ifdef SPOTTER_DML
 #include <dml_provider_factory.h>
+#include <dxgi1_6.h>
+#include <wrl/client.h>
 #endif
 
 namespace spotter {
@@ -30,6 +32,30 @@ struct Box {
   float x1, y1, x2, y2, score;
 };
 
+#ifdef SPOTTER_DML
+// The fast GPU: on a laptop with two, adapter 0 is often the integrated one. DirectML numbers the
+// adapters as DXGI enumerates them; find the high-performance one in that order.
+int fast_adapter(std::string* name) {
+  using Microsoft::WRL::ComPtr;
+  ComPtr<IDXGIFactory6> factory;
+  if (FAILED(CreateDXGIFactory1(IID_PPV_ARGS(&factory)))) return 0;
+  ComPtr<IDXGIAdapter1> fast;
+  if (FAILED(factory->EnumAdapterByGpuPreference(0, DXGI_GPU_PREFERENCE_HIGH_PERFORMANCE, IID_PPV_ARGS(&fast)))) return 0;
+  DXGI_ADAPTER_DESC1 want{};
+  fast->GetDesc1(&want);
+  ComPtr<IDXGIAdapter1> a;
+  for (UINT i = 0; factory->EnumAdapters1(i, &a) != DXGI_ERROR_NOT_FOUND; ++i) {
+    DXGI_ADAPTER_DESC1 d{};
+    a->GetDesc1(&d);
+    if (d.AdapterLuid.LowPart == want.AdapterLuid.LowPart && d.AdapterLuid.HighPart == want.AdapterLuid.HighPart) {
+      for (const wchar_t* c = d.Description; *c; ++c) name->push_back(char(*c));  // adapter names are ASCII
+      return int(i);
+    }
+  }
+  return 0;
+}
+#endif
+
 }  // namespace
 
 struct PoseEstimator::Impl {
@@ -49,9 +75,11 @@ struct PoseEstimator::Impl {
       try {
         o.DisableMemPattern();
         o.SetExecutionMode(ExecutionMode::ORT_SEQUENTIAL);
-        Ort::ThrowOnError(OrtSessionOptionsAppendExecutionProvider_DML(o, 0));
+        std::string adapter;
+        int id = fast_adapter(&adapter);
+        Ort::ThrowOnError(OrtSessionOptionsAppendExecutionProvider_DML(o, id));
         auto s = std::make_unique<Ort::Session>(env, path.c_str(), o);
-        device = "DirectML";
+        device = adapter.empty() ? "DirectML" : "DirectML, " + adapter;
         return s;
       } catch (const Ort::Exception&) {
         o = Ort::SessionOptions();

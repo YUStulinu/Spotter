@@ -65,7 +65,8 @@ Advice advise(const ExerciseHistory& h, int fatigue, const PlanItem& planned) {
   Advice a;
   if (!e || h.sessions.empty()) {
     a = {Decision::Start, planned.sets, planned.reps, planned.weight_kg, "first session: start light and learn the movement"};
-    if (fatigue >= 8) a.sets = std::max(1, a.sets - 1), a.decision = Decision::Reduce, a.reason = "very tired today: one set fewer";
+    // Nothing logged to take a set off: a tired first session keeps to two sets.
+    if (fatigue >= 8) a.sets = std::min(a.sets, 2), a.decision = Decision::Reduce, a.reason = "very tired today: two sets at most";
     return a;
   }
   const auto& last = h.sessions.back();

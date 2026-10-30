@@ -127,10 +127,10 @@ Item {
                                 text: History.exerciseName(modelData)
                             }
                         }
-                        SpinBox { id: reps; from: 1; to: 50; value: 10; implicitWidth: 100 }
+                        SpinBox { id: reps; from: 1; to: 50; value: 10; implicitWidth: 150; editable: true }
                     }
                     RowLayout {
-                        SpinBox { id: kg; from: 0; to: 400; value: 0; implicitWidth: 110; editable: true }
+                        SpinBox { id: kg; from: 0; to: 400; value: 0; implicitWidth: 150; editable: true }
                         Label { text: "kg"; color: Theme.muted }
                         Item { Layout.fillWidth: true }
                         Button { text: "Count this"; onClicked: Coach.planSet(pick.currentText, reps.value, kg.value) }

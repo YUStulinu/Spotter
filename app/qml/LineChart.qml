@@ -18,7 +18,7 @@ Canvas {
         let t0 = points[0].t, t1 = points[points.length - 1].t
         if (t1 === t0) { t0 -= 86400000; t1 += 86400000 }
         let lo = Math.min(...points.map(p => p.v)), hi = Math.max(...points.map(p => p.v))
-        const pad = Math.max(1, (hi - lo) * 0.15)
+        const pad = Math.max(2, (hi - lo) * 0.15)
         lo -= pad; hi += pad
         const x = t => left + (t - t0) / (t1 - t0) * w
         const y = v => top + (1 - (v - lo) / (hi - lo)) * h
@@ -29,7 +29,7 @@ Canvas {
         for (let i = 0; i <= 4; ++i) {
             const v = lo + (hi - lo) * i / 4
             ctx.beginPath(); ctx.moveTo(left, y(v)); ctx.lineTo(left + w, y(v)); ctx.stroke()
-            ctx.fillText(v.toFixed(0), 4, y(v) + 4)
+            ctx.fillText(v.toFixed(hi - lo < 8 ? 1 : 0), 4, y(v) + 4)
         }
         ctx.fillText(unit, left, 14)
         const fmt = t => { const d = new Date(t); return d.getDate() + "/" + (d.getMonth() + 1) }

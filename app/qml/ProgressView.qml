@@ -20,6 +20,8 @@ Item {
                     implicitWidth: 220
                     model: History.exercises
                     displayText: History.exerciseName(currentText)
+                    // Start on the squat when there is one: the lift most people follow.
+                    Component.onCompleted: currentIndex = Math.max(0, History.exercises.indexOf("squats"))
                     delegate: ItemDelegate {
                         required property string modelData
                         width: which.width

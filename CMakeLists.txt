@@ -45,7 +45,7 @@ target_include_directories(spotter_core PUBLIC core)
 target_link_libraries(spotter_core PUBLIC ${OpenCV_LIBS} onnxruntime Qt6::Core Qt6::Sql Qt6::Network)
 if(WIN32)
   target_compile_definitions(spotter_core PRIVATE SPOTTER_DML)
-  target_link_libraries(spotter_core PUBLIC ole32 sapi)
+  target_link_libraries(spotter_core PUBLIC ole32 sapi dxgi)
 endif()
 target_compile_definitions(spotter_core PUBLIC SPOTTER_ROOT="${CMAKE_SOURCE_DIR}")
 
