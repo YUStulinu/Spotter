@@ -18,6 +18,9 @@ set(THIRD_PARTY ${CMAKE_SOURCE_DIR}/third_party)
 # OpenCV: third_party/opencv/build on Windows (scripts/fetch-deps.sh), the system's elsewhere.
 if(WIN32 AND NOT OpenCV_DIR)
   set(OpenCV_DIR ${THIRD_PARTY}/opencv/build)
+  # The Windows pack is built with Visual Studio 2019 (vc16), which newer MSVC versions link against
+  # fine, but its config only recognises the compilers it knew of.
+  set(OpenCV_RUNTIME vc16)
 endif()
 find_package(OpenCV REQUIRED COMPONENTS core imgproc imgcodecs videoio)
 

@@ -379,7 +379,7 @@ Plan rules_plan(const Profile& p, const std::vector<ExerciseHistory>& history, i
     bool barbell = p.equipment.contains("barbell");
     auto item = [&](const QString& id, int sets, int reps) {
       const ExerciseLoad* e = find_load(id);
-      return PlanItem{id, sets, reps, e ? start_weight(*e, p) : 0, e && e->load == Load::Barbell ? 150 : 90, "starting weight", {}};
+      return PlanItem{id, sets, reps, e ? start_weight(*e, p) : 0, e && e->load == Load::Barbell ? 150 : 90, "starting weight", {}, {}};
     };
     QString lower = barbell ? "squats" : "lunges", hinge = barbell ? "deadlift" : "lunges";
     std::vector<PlanDay> all = {

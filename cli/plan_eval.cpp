@@ -82,7 +82,7 @@ std::vector<Scenario> scenarios() {
         Situation sit = sits[(i + size_t(round)) % 5];
         sc.history.push_back(make_history(id, sit, w, sets, reps, rng));
         sc.name += QString(" %1:%2").arg(id, situation_name(sit));
-        PlanItem item{id, sets, reps, w, 90, "", {}};
+        PlanItem item{id, sets, reps, w, 90, "", {}, {}};
         (i % 2 ? b : a).items.push_back(item);
       }
       current.days = {a, b};
@@ -165,7 +165,7 @@ int cmd_plan_eval(std::vector<std::string> args) {
         }
         ++items;
         violations += broke;
-        PlanItem rule_item{item.exercise, a.sets, a.reps, a.weight_kg, 90, "", {}};
+        PlanItem rule_item{item.exercise, a.sets, a.reps, a.weight_kg, 90, "", {}, {}};
         int model_dir = direction(item, *h), rule_dir = direction(rule_item, *h);
         // Fewer sets at the same weight is "down" too.
         auto& slot = agree[decision_name(a.decision)];

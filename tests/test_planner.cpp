@@ -18,7 +18,7 @@ ExerciseHistory history(const QString& id, std::vector<std::tuple<double, int, s
   }
   return h;
 }
-PlanItem item(const QString& id, int sets, int reps, double w) { return {id, sets, reps, w, 90, "", {}}; }
+PlanItem item(const QString& id, int sets, int reps, double w) { return {id, sets, reps, w, 90, "", {}, {}}; }
 Plan plan_of(std::vector<PlanItem> items) {
   Plan p;
   p.days = {PlanDay{"Day A", items}};

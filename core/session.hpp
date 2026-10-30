@@ -67,7 +67,6 @@ class Session {
   std::string exercise_, forced_;
   std::unique_ptr<RepCounter> counter_;
   double last_active_ = 0;       // the last time the set's exercise was seen
-  size_t fed_ = 0;               // frames of the track handed to the counter
   double last_frame_t_ = -1;
   int since_classify_ = 0;
   std::deque<Frame> history_;    // the set's frames, for the form checks
