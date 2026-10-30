@@ -1,0 +1,122 @@
+{
+ "squats": {
+  "signal": "hip_height",
+  "direction": -1,
+  "amplitude": 0.42538068,
+  "train_mae": 0.0,
+  "train_exact": 1.0,
+  "train_sets": 31,
+  "val_mae": 0.0,
+  "val_exact": 1.0,
+  "val_within_1": 1.0,
+  "val_sets": 9
+ },
+ "lunges": {
+  "signal": "hip_height",
+  "direction": -1,
+  "amplitude": 0.3687117600000001,
+  "train_mae": 0.0,
+  "train_exact": 1.0,
+  "train_sets": 29,
+  "val_mae": 0.0,
+  "val_exact": 1.0,
+  "val_within_1": 1.0,
+  "val_sets": 9
+ },
+ "pushups": {
+  "signal": "hip_height",
+  "direction": -1,
+  "amplitude": 0.23145516,
+  "train_mae": 0.0,
+  "train_exact": 1.0,
+  "train_sets": 32,
+  "val_mae": 0.2222222222222222,
+  "val_exact": 0.8888888888888888,
+  "val_within_1": 0.8888888888888888,
+  "val_sets": 9
+ },
+ "situps": {
+  "signal": "nose_height",
+  "direction": -1,
+  "amplitude": 0.3227511,
+  "train_mae": 0.4375,
+  "train_exact": 0.5625,
+  "train_sets": 32,
+  "val_mae": 0.3333333333333333,
+  "val_exact": 0.6666666666666666,
+  "val_within_1": 1.0,
+  "val_sets": 9
+ },
+ "jumping_jacks": {
+  "signal": "wrist_lift",
+  "direction": 1,
+  "amplitude": 0.78947838,
+  "train_mae": 0.0,
+  "train_exact": 1.0,
+  "train_sets": 30,
+  "val_mae": 0.0,
+  "val_exact": 1.0,
+  "val_within_1": 1.0,
+  "val_sets": 6
+ },
+ "bicep_curls": {
+  "signal": "elbow_angle",
+  "direction": -1,
+  "amplitude": 46.466988,
+  "train_mae": 0.0,
+  "train_exact": 1.0,
+  "train_sets": 27,
+  "val_mae": 0.0,
+  "val_exact": 1.0,
+  "val_within_1": 1.0,
+  "val_sets": 10
+ },
+ "tricep_extensions": {
+  "signal": "wrist_lift",
+  "direction": 1,
+  "amplitude": 0.3510682200000001,
+  "train_mae": 0.06451612903225806,
+  "train_exact": 0.9354838709677419,
+  "train_sets": 31,
+  "val_mae": 0.1111111111111111,
+  "val_exact": 0.8888888888888888,
+  "val_within_1": 1.0,
+  "val_sets": 9
+ },
+ "dumbbell_rows": {
+  "signal": "elbow_angle",
+  "direction": -1,
+  "amplitude": 45.56142,
+  "train_mae": 0.0,
+  "train_exact": 1.0,
+  "train_sets": 31,
+  "val_mae": 0.0,
+  "val_exact": 1.0,
+  "val_within_1": 1.0,
+  "val_sets": 9
+ },
+ "dumbbell_shoulder_press": {
+  "signal": "elbow_angle",
+  "direction": 1,
+  "amplitude": 53.596236,
+  "train_mae": 0.0,
+  "train_exact": 1.0,
+  "train_sets": 30,
+  "val_mae": 0.0,
+  "val_exact": 1.0,
+  "val_within_1": 1.0,
+  "val_sets": 9
+ },
+ "lateral_shoulder_raises": {
+  "signal": "wrist_lift",
+  "direction": 1,
+  "amplitude": 0.96056334,
+  "train_mae": 0.0,
+  "train_exact": 1.0,
+  "train_sets": 28,
+  "val_mae": 0.2857142857142857,
+  "val_exact": 0.8571428571428571,
+  "val_within_1": 0.8571428571428571,
+  "val_sets": 7
+ }
+}

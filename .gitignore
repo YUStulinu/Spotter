@@ -1,0 +1,10 @@
+build/
+.vs/
+__pycache__/
+*.pyc
+train/.venv/
+
+# Downloaded and generated
+/third_party/
+/data/
+/docs/try.png

@@ -1,0 +1,17 @@
+{
+ "classes": [
+  "squats",
+  "lunges",
+  "pushups",
+  "situps",
+  "jumping_jacks",
+  "bicep_curls",
+  "tricep_extensions",
+  "dumbbell_rows",
+  "dumbbell_shoulder_press",
+  "lateral_shoulder_raises",
+  "none"
+ ],
+ "window": 64,
+ "fps": 30.0
+}

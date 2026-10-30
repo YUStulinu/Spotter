@@ -1,0 +1,85 @@
+{
+ "squats": {
+  "fault": "knees_in",
+  "clean": {
+   "reps": 239,
+   "flagged": 0,
+   "rate": 0.0
+  },
+  "injected": {
+   "0.3": {
+    "reps": 239,
+    "flagged": 50,
+    "rate": 0.20920502092050208
+   },
+   "0.5": {
+    "reps": 239,
+    "flagged": 150,
+    "rate": 0.6276150627615062
+   },
+   "0.7": {
+    "reps": 239,
+    "flagged": 164,
+    "rate": 0.6861924686192469
+   }
+  }
+ },
+ "bicep_curls": {
+  "fault": "swing",
+  "clean": {
+   "reps": 227,
+   "flagged": 0,
+   "rate": 0.0
+  },
+  "injected": {
+   "10": {
+    "reps": 227,
+    "flagged": 5,
+    "rate": 0.022026431718061675
+   },
+   "20": {
+    "reps": 227,
+    "flagged": 227,
+    "rate": 1.0
+   },
+   "30": {
+    "reps": 227,
+    "flagged": 227,
+    "rate": 1.0
+   }
+  }
+ },
+ "dumbbell_shoulder_press": {
+  "fault": "uneven",
+  "clean": {
+   "reps": 208,
+   "flagged": 0,
+   "rate": 0.0
+  },
+  "injected": {
+   "0.2": {
+    "reps": 208,
+    "flagged": 0,
+    "rate": 0.0
+   },
+   "0.35": {
+    "reps": 208,
+    "flagged": 172,
+    "rate": 0.8269230769230769
+   },
+   "0.5": {
+    "reps": 208,
+    "flagged": 184,
+    "rate": 0.8846153846153846
+   }
+  }
+ },
+ "all_checks_on_clean_reps": {
+  "squats": {
+   "depth": 6
+  },
+  "dumbbell_shoulder_press": {
+   "lockout": 8
+  }
+ }
+}

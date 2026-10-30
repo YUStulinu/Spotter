@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  cpp:
+    # The coach without a camera, on the CPU: the pose model on a frame of a real squat, smoothing
+    # and resampling, repetition counting and form checks on synthetic lifters, the workout log, the
+    # planner's progression rules and their check on a model's plan. The desktop app is built too.
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v5
+      - uses: jurplel/install-qt-action@v4
+        with:
+          version: 6.8.3
+          cache: true
+      - name: OpenCV
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libopencv-dev libgl1-mesa-dev
+      - uses: actions/cache@v5
+        with:
+          path: third_party/downloads
+          key: downloads-${{ matrix.os }}-${{ hashFiles('scripts/fetch-deps.sh') }}
+      - name: ONNX Runtime, OpenCV (Windows), pose models
+        run: bash scripts/fetch-deps.sh
+      - name: Build
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build --config Release --parallel 4
+      - name: Tests
+        run: ctest --test-dir build -C Release --output-on-failure
+
+  train:
+    # The classifier's side: the normalisation inside the model, the ONNX export against PyTorch,
+    # the conversion from MM-Fit's OpenPose joints and the keypoint files shared with C++.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - name: Tests
+        working-directory: train
+        run: |
+          pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install numpy==2.5.4 onnx==1.23.2 onnxruntime==1.31.1 pytest==9.2.0
+          python -m pytest -q
+
+# Training (MM-Fit, a GPU), the end-to-end evaluation (MM-Fit's videos) and the planner's evaluation
+# (Qwen2.5-7B) run locally: see README.md, "Results".

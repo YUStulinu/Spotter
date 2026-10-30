@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Spotter",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/build/Release/spotter.exe",
+      "cwd": "${workspaceFolder}",
+      "environment": [{ "name": "PATH", "value": "${workspaceFolder}/third_party/qt/bin;${env:PATH}" }]
+    }
+  ]
+}

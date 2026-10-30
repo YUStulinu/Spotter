@@ -1,0 +1,1339 @@
+{
+ "test_unseen_video": {
+  "sets": 139,
+  "found": 1.0,
+  "invented": 8,
+  "exercise_right": 1.0,
+  "reps_mae": 0.22302158273381295,
+  "reps_exact": 0.8201438848920863,
+  "reps_within_1": 0.9712230215827338,
+  "counter_only_mae": 0.37410071942446044,
+  "counter_only_exact": 0.7553956834532374,
+  "counter_only_within_1": 0.9280575539568345,
+  "per_exercise": {
+   "squats": {
+    "sets": 15,
+    "recognised": 1.0,
+    "counter_mae": 0.0,
+    "counter_exact": 1.0,
+    "counter_within_1": 1.0
+   },
+   "lunges": {
+    "sets": 15,
+    "recognised": 1.0,
+    "counter_mae": 0.5333333333333333,
+    "counter_exact": 0.8,
+    "counter_within_1": 0.8666666666666667
+   },
+   "pushups": {
+    "sets": 15,
+    "recognised": 1.0,
+    "counter_mae": 0.13333333333333333,
+    "counter_exact": 0.9333333333333333,
+    "counter_within_1": 0.9333333333333333
+   },
+   "situps": {
+    "sets": 15,
+    "recognised": 1.0,
+    "counter_mae": 0.7333333333333333,
+    "counter_exact": 0.3333333333333333,
+    "counter_within_1": 0.9333333333333333
+   },
+   "jumping_jacks": {
+    "sets": 12,
+    "recognised": 1.0,
+    "counter_mae": 0.9166666666666666,
+    "counter_exact": 0.75,
+    "counter_within_1": 0.75
+   },
+   "bicep_curls": {
+    "sets": 13,
+    "recognised": 1.0,
+    "counter_mae": 0.23076923076923078,
+    "counter_exact": 0.7692307692307693,
+    "counter_within_1": 1.0
+   },
+   "tricep_extensions": {
+    "sets": 15,
+    "recognised": 1.0,
+    "counter_mae": 0.26666666666666666,
+    "counter_exact": 0.7333333333333333,
+    "counter_within_1": 1.0
+   },
+   "dumbbell_rows": {
+    "sets": 15,
+    "recognised": 1.0,
+    "counter_mae": 0.4,
+    "counter_exact": 0.6666666666666666,
+    "counter_within_1": 0.9333333333333333
+   },
+   "dumbbell_shoulder_press": {
+    "sets": 12,
+    "recognised": 1.0,
+    "counter_mae": 0.16666666666666666,
+    "counter_exact": 0.8333333333333334,
+    "counter_within_1": 1.0
+   },
+   "lateral_shoulder_raises": {
+    "sets": 12,
+    "recognised": 1.0,
+    "counter_mae": 0.4166666666666667,
+    "counter_exact": 0.75,
+    "counter_within_1": 0.8333333333333334
+   }
+  },
+  "rows": [
+   {
+    "workout": "w00",
+    "exercise": "squats",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "squats",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w00",
+    "exercise": "squats",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "squats",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w00",
+    "exercise": "squats",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "squats",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "pushups",
+    "reps": 11,
+    "counter_only": 11,
+    "found": true,
+    "predicted": "pushups",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w00",
+    "exercise": "pushups",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "pushups",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "pushups",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "pushups",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "dumbbell_shoulder_press",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "dumbbell_shoulder_press",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "dumbbell_shoulder_press",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "dumbbell_shoulder_press",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "dumbbell_shoulder_press",
+    "reps": 9,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "dumbbell_shoulder_press",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "lunges",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lunges",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "lunges",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lunges",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "lunges",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lunges",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "dumbbell_rows",
+    "reps": 11,
+    "counter_only": 11,
+    "found": true,
+    "predicted": "dumbbell_rows",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w00",
+    "exercise": "dumbbell_rows",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "dumbbell_rows",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "dumbbell_rows",
+    "reps": 11,
+    "counter_only": 11,
+    "found": true,
+    "predicted": "dumbbell_rows",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w00",
+    "exercise": "situps",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "situps",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w00",
+    "exercise": "situps",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "situps",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "situps",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "situps",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "tricep_extensions",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "tricep_extensions",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "tricep_extensions",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "tricep_extensions",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "tricep_extensions",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "tricep_extensions",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w00",
+    "exercise": "bicep_curls",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "bicep_curls",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "bicep_curls",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "bicep_curls",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "bicep_curls",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "bicep_curls",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "lateral_shoulder_raises",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lateral_shoulder_raises",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "lateral_shoulder_raises",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lateral_shoulder_raises",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "lateral_shoulder_raises",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lateral_shoulder_raises",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "jumping_jacks",
+    "reps": 11,
+    "counter_only": 11,
+    "found": true,
+    "predicted": "jumping_jacks",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w00",
+    "exercise": "jumping_jacks",
+    "reps": 11,
+    "counter_only": 11,
+    "found": true,
+    "predicted": "jumping_jacks",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w00",
+    "exercise": "jumping_jacks",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "jumping_jacks",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "squats",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "squats",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "squats",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "squats",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "squats",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "squats",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "pushups",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "pushups",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "pushups",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "pushups",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "pushups",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "pushups",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "dumbbell_shoulder_press",
+    "reps": 9,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "dumbbell_shoulder_press",
+    "predicted_reps": 9
+   },
+   {
+    "workout": "w05",
+    "exercise": "dumbbell_shoulder_press",
+    "reps": 9,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "dumbbell_shoulder_press",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "dumbbell_shoulder_press",
+    "reps": 9,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "dumbbell_shoulder_press",
+    "predicted_reps": 9
+   },
+   {
+    "workout": "w05",
+    "exercise": "lunges",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lunges",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "lunges",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lunges",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "lunges",
+    "reps": 11,
+    "counter_only": 11,
+    "found": true,
+    "predicted": "lunges",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w05",
+    "exercise": "dumbbell_rows",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "dumbbell_rows",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "dumbbell_rows",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "dumbbell_rows",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "dumbbell_rows",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "dumbbell_rows",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "situps",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "situps",
+    "predicted_reps": 9
+   },
+   {
+    "workout": "w05",
+    "exercise": "situps",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "situps",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "situps",
+    "reps": 9,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "situps",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "tricep_extensions",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "tricep_extensions",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "tricep_extensions",
+    "reps": 11,
+    "counter_only": 11,
+    "found": true,
+    "predicted": "tricep_extensions",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w05",
+    "exercise": "tricep_extensions",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "tricep_extensions",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w05",
+    "exercise": "bicep_curls",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "bicep_curls",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "bicep_curls",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "bicep_curls",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "bicep_curls",
+    "reps": 11,
+    "counter_only": 11,
+    "found": true,
+    "predicted": "bicep_curls",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w05",
+    "exercise": "lateral_shoulder_raises",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lateral_shoulder_raises",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "lateral_shoulder_raises",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lateral_shoulder_raises",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "lateral_shoulder_raises",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lateral_shoulder_raises",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "jumping_jacks",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "jumping_jacks",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w05",
+    "exercise": "jumping_jacks",
+    "reps": 11,
+    "counter_only": 11,
+    "found": true,
+    "predicted": "jumping_jacks",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w05",
+    "exercise": "jumping_jacks",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "jumping_jacks",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w12",
+    "exercise": "squats",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "squats",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w12",
+    "exercise": "squats",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "squats",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w12",
+    "exercise": "squats",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "squats",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w12",
+    "exercise": "pushups",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "pushups",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w12",
+    "exercise": "pushups",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "pushups",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w12",
+    "exercise": "pushups",
+    "reps": 10,
+    "counter_only": 8,
+    "found": true,
+    "predicted": "pushups",
+    "predicted_reps": 8
+   },
+   {
+    "workout": "w12",
+    "exercise": "dumbbell_shoulder_press",
+    "reps": 10,
+    "counter_only": 11,
+    "found": true,
+    "predicted": "dumbbell_shoulder_press",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w12",
+    "exercise": "dumbbell_shoulder_press",
+    "reps": 10,
+    "counter_only": 11,
+    "found": true,
+    "predicted": "dumbbell_shoulder_press",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w12",
+    "exercise": "dumbbell_shoulder_press",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "dumbbell_shoulder_press",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w12",
+    "exercise": "lunges",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lunges",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w12",
+    "exercise": "lunges",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lunges",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w12",
+    "exercise": "lunges",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lunges",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w12",
+    "exercise": "dumbbell_rows",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "dumbbell_rows",
+    "predicted_reps": 9
+   },
+   {
+    "workout": "w12",
+    "exercise": "dumbbell_rows",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "dumbbell_rows",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w12",
+    "exercise": "dumbbell_rows",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "dumbbell_rows",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w12",
+    "exercise": "situps",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "situps",
+    "predicted_reps": 9
+   },
+   {
+    "workout": "w12",
+    "exercise": "situps",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "situps",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w12",
+    "exercise": "situps",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "situps",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w12",
+    "exercise": "tricep_extensions",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "tricep_extensions",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w12",
+    "exercise": "tricep_extensions",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "tricep_extensions",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w12",
+    "exercise": "tricep_extensions",
+    "reps": 11,
+    "counter_only": 11,
+    "found": true,
+    "predicted": "tricep_extensions",
+    "predicted_reps": 12
+   },
+   {
+    "workout": "w12",
+    "exercise": "bicep_curls",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "bicep_curls",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "squats",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "squats",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "squats",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "squats",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "squats",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "squats",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "pushups",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "pushups",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "pushups",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "pushups",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "pushups",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "pushups",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "dumbbell_shoulder_press",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "dumbbell_shoulder_press",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "dumbbell_shoulder_press",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "dumbbell_shoulder_press",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "dumbbell_shoulder_press",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "dumbbell_shoulder_press",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "lunges",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "lunges",
+    "predicted_reps": 9
+   },
+   {
+    "workout": "w13",
+    "exercise": "lunges",
+    "reps": 10,
+    "counter_only": 5,
+    "found": true,
+    "predicted": "lunges",
+    "predicted_reps": 6
+   },
+   {
+    "workout": "w13",
+    "exercise": "lunges",
+    "reps": 10,
+    "counter_only": 8,
+    "found": true,
+    "predicted": "lunges",
+    "predicted_reps": 8
+   },
+   {
+    "workout": "w13",
+    "exercise": "dumbbell_rows",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "dumbbell_rows",
+    "predicted_reps": 9
+   },
+   {
+    "workout": "w13",
+    "exercise": "dumbbell_rows",
+    "reps": 10,
+    "counter_only": 8,
+    "found": true,
+    "predicted": "dumbbell_rows",
+    "predicted_reps": 8
+   },
+   {
+    "workout": "w13",
+    "exercise": "dumbbell_rows",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "dumbbell_rows",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "situps",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "situps",
+    "predicted_reps": 9
+   },
+   {
+    "workout": "w13",
+    "exercise": "situps",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "situps",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "situps",
+    "reps": 11,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "situps",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w13",
+    "exercise": "tricep_extensions",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "tricep_extensions",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "tricep_extensions",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "tricep_extensions",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "tricep_extensions",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "tricep_extensions",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "bicep_curls",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "bicep_curls",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "bicep_curls",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "bicep_curls",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "bicep_curls",
+    "reps": 12,
+    "counter_only": 12,
+    "found": true,
+    "predicted": "bicep_curls",
+    "predicted_reps": 12
+   },
+   {
+    "workout": "w13",
+    "exercise": "lateral_shoulder_raises",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lateral_shoulder_raises",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "lateral_shoulder_raises",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lateral_shoulder_raises",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "lateral_shoulder_raises",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lateral_shoulder_raises",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w13",
+    "exercise": "jumping_jacks",
+    "reps": 11,
+    "counter_only": 11,
+    "found": true,
+    "predicted": "jumping_jacks",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w13",
+    "exercise": "jumping_jacks",
+    "reps": 11,
+    "counter_only": 11,
+    "found": true,
+    "predicted": "jumping_jacks",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w13",
+    "exercise": "jumping_jacks",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "jumping_jacks",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "squats",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "squats",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "squats",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "squats",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "squats",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "squats",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "pushups",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "pushups",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "pushups",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "pushups",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "pushups",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "pushups",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "lunges",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lunges",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "lunges",
+    "reps": 9,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "lunges",
+    "predicted_reps": 9
+   },
+   {
+    "workout": "w20",
+    "exercise": "lunges",
+    "reps": 10,
+    "counter_only": 10,
+    "found": true,
+    "predicted": "lunges",
+    "predicted_reps": 11
+   },
+   {
+    "workout": "w20",
+    "exercise": "dumbbell_rows",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "dumbbell_rows",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "dumbbell_rows",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "dumbbell_rows",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "dumbbell_rows",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "dumbbell_rows",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "situps",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "situps",
+    "predicted_reps": 9
+   },
+   {
+    "workout": "w20",
+    "exercise": "situps",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "situps",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "situps",
+    "reps": 10,
+    "counter_only": 8,
+    "found": true,
+    "predicted": "situps",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "tricep_extensions",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "tricep_extensions",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "tricep_extensions",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "tricep_extensions",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "tricep_extensions",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "tricep_extensions",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "bicep_curls",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "bicep_curls",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "bicep_curls",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "bicep_curls",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "bicep_curls",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "bicep_curls",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "lateral_shoulder_raises",
+    "reps": 10,
+    "counter_only": 9,
+    "found": true,
+    "predicted": "lateral_shoulder_raises",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "lateral_shoulder_raises",
+    "reps": 10,
+    "counter_only": 8,
+    "found": true,
+    "predicted": "lateral_shoulder_raises",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "lateral_shoulder_raises",
+    "reps": 10,
+    "counter_only": 8,
+    "found": true,
+    "predicted": "lateral_shoulder_raises",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "jumping_jacks",
+    "reps": 10,
+    "counter_only": 6,
+    "found": true,
+    "predicted": "jumping_jacks",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "jumping_jacks",
+    "reps": 10,
+    "counter_only": 7,
+    "found": true,
+    "predicted": "jumping_jacks",
+    "predicted_reps": 10
+   },
+   {
+    "workout": "w20",
+    "exercise": "jumping_jacks",
+    "reps": 10,
+    "counter_only": 6,
+    "found": true,
+    "predicted": "jumping_jacks",
+    "predicted_reps": 10
+   }
+  ]
+ }
+}

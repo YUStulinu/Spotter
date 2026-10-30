@@ -1,0 +1,7 @@
+* text=auto
+*.sh text eol=lf
+*.cmd text eol=crlf
+*.jsonl text eol=lf
+*.json text eol=lf
+*.epub binary
+*.png binary

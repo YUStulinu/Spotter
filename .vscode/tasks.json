@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "fetch dependencies", "type": "shell", "command": "bash scripts/fetch-deps.sh --llm", "problemMatcher": [] },
+    { "label": "configure", "type": "shell", "command": "cmake -S . -B build -DCMAKE_PREFIX_PATH=third_party/qt", "problemMatcher": [] },
+    { "label": "build", "type": "shell", "command": "cmake --build build --config Release --parallel", "group": "build", "problemMatcher": ["$msCompile"] },
+    { "label": "C++ tests", "type": "shell", "command": "ctest --test-dir build -C Release --output-on-failure", "group": "test", "problemMatcher": [] },
+    { "label": "Python tests", "type": "shell", "command": ".venv/Scripts/python -m pytest -q", "options": { "cwd": "${workspaceFolder}/train" }, "group": "test", "problemMatcher": [] },
+    { "label": "train the classifier", "type": "shell", "command": ".venv/Scripts/python -m spotter_train.train", "options": { "cwd": "${workspaceFolder}/train" }, "problemMatcher": [] }
+  ]
+}

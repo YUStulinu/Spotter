@@ -1,0 +1,8 @@
+{
+  "cmake.configureArgs": ["-DCMAKE_PREFIX_PATH=${workspaceFolder}/third_party/qt"],
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "python.defaultInterpreterPath": "${workspaceFolder}/train/.venv/Scripts/python.exe",
+  "python.testing.pytestEnabled": true,
+  "python.testing.cwd": "${workspaceFolder}/train",
+  "search.exclude": { "third_party": true, "data": true, "build": true }
+}
