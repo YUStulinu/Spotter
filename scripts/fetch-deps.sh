@@ -36,7 +36,7 @@ fetch $mm/yolox_tiny_8xb8-300e_humanart-6f3252f9.zip 36e09ca555916253fa1b5d51bec
 fetch $mm/rtmpose-m_simcc-body7_pt-body7_420e-256x192-e48f03d0_20230504.zip f7fbb6c5c11a1bb70f3d445e4ddec5d144ea89ad5649c081ef976f9b24a0b741 rtmpose-m.zip
 for m in yolox-tiny rtmpose-m; do
   if [ ! -f "$tp/models/pose/$m.onnx" ]; then
-    unzip -qo "$dl/$m.zip" '*end2end.onnx' -d "$dl/$m"
+    unzip -qo "$dl/$m.zip" -d "$dl/$m"
     find "$dl/$m" -name end2end.onnx -exec mv {} "$tp/models/pose/$m.onnx" \;
     rm -rf "$dl/$m"
   fi
